@@ -1,14 +1,14 @@
 # Startup
 Startup application for BYU CS 260
 
-# Specification Deliverable
+## Specification Deliverable
 
-## Elevator Pitch
+### Elevator Pitch
 
-## Design
+### Design
 
-## Key Features
+### Key Features
 
-## Technologies
+### Technologies
 
-#HTML Deliverable
+## HTML Deliverable

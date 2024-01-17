@@ -1,6 +1,6 @@
 # startup
 Startup application for BYU CS 260
 
-#Specification Deliverable
+# Specification Deliverable
 
-##Elevator Pitch
+## Elevator Pitch

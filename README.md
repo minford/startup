@@ -13,11 +13,11 @@ We've seen avocado toast and avocado in sushi, some people even make avocado bro
 ### Technologies
 The required technologies will be used in the following ways:
 - HTML - Structure
-- CSS - Styling of the webpage
+- CSS - Styling of the webpage, adding color and using desired spacing of recipes
 - JavaScript - Interaction
 - Service - Web service endpoints: saveScores, getWeather
-- Database/Login - Save stuff, Authentication
-- WebSocket - Real time peer interaction
+- Database/Login - Stores each user's Authentication information, also stores all recipes
+- WebSocket - Users can see new recipes in real time and the ratings for each recipe will be updated in real time as well.
 - React - Web framework
 
 

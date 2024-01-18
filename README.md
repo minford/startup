@@ -9,6 +9,12 @@ We've seen avocado toast and avocado in sushi, some people even make avocado bro
 ### Design
 
 ### Key Features
+- Secure login
+- See top rated recipes
+- Display all recipes
+- Select a recipe and give it a rating
+- Favorite/save recipes
+- Create or delete your own uploaded recipes
 
 ### Technologies
 The required technologies will be used in the following ways:

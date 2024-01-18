@@ -9,11 +9,9 @@ We've seen avocado toast and avocado in sushi, some people even make avocado bro
 ### Design
 ![Login Page](https://github.com/minford/startup/blob/61d6503f3d2ae2c237541a842bd1ad3438423b77/Login%20Design.png)
 
-![Page to show recipes]
-(https://github.com/minford/startup/blob/e515f7c16df5ee9747592a81f63d96abd03749f8/All%20Recipes%20Design.png)
+![Page to show recipes](https://github.com/minford/startup/blob/e515f7c16df5ee9747592a81f63d96abd03749f8/All%20Recipes%20Design.png)
 
-![Rate individual recipes page]
-(https://github.com/minford/startup/blob/e515f7c16df5ee9747592a81f63d96abd03749f8/Rate%20Recipe%20Design.png)
+![Rate individual recipes page](https://github.com/minford/startup/blob/e515f7c16df5ee9747592a81f63d96abd03749f8/Rate%20Recipe%20Design.png)
 
 
 

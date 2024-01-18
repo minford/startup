@@ -1,4 +1,4 @@
-# Startup
+# Startup - Lavocado
 Startup application for BYU CS 260
 
 ## Specification Deliverable
@@ -11,5 +11,14 @@ We've seen avocado toast and avocado in sushi, some people even make avocado bro
 ### Key Features
 
 ### Technologies
+The required technologies will be used in the following ways:
+- HTML - Structure
+- CSS - Styling of the webpage
+- JavaScript - Interaction
+- Service - Web service endpoints: saveScores, getWeather
+- Database/Login - Save stuff, Authentication
+- WebSocket - Real time peer interaction
+- React - Web framework
+
 
 ## HTML Deliverable

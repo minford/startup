@@ -1,7 +1,7 @@
 # 01.12.2024
 ### First .md file, Forking a file allows for suggested edits - similar to cloning
 
-#01.22.2023
+# 01.22.2023
 Elastic IP: http://34.226.101.5/
 Remote Shell command: ssh -i /Users/rental/Documents/'CS 260'/startup/keys/production.pem ubuntu@34.226.101.5
 Run ls -l 

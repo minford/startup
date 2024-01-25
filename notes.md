@@ -11,13 +11,13 @@ to see the Caddyfile is the configuration file for your web service gateway. The
 To get to the Caddy file:
 ssh -i rental$ ssh -i/Users/rental/Documents/'CS 260'/startup/keys/production.pem ubuntu@lavocado.click
  Edit the Caddy's configuration
- cd ~
- vi Caddyfile
+> cd ~
+> vi Caddyfile
 
  save the file and exit by editting the file and then press esc and type :wq
 
  restart Caddy with 
- sudo service Caddy restart
+ > sudo service Caddy restart
 
  Let's Encrypt generates a web certificate which enables HTTPS
  Domain Names allow fro a specifc naming convention using the IP Adress, connected on Route 53

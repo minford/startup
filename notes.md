@@ -12,6 +12,7 @@ To get to the Caddy file:
 ssh -i rental$ ssh -i/Users/rental/Documents/'CS 260'/startup/keys/production.pem ubuntu@lavocado.click
  Edit the Caddy's configuration
 > cd ~
+> 
 > vi Caddyfile
 
  save the file and exit by editting the file and then press esc and type :wq

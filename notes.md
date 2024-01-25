@@ -23,5 +23,5 @@ ssh -i rental$ ssh -i/Users/rental/Documents/'CS 260'/startup/keys/production.pe
  Domain Names allow fro a specifc naming convention using the IP Adress, connected on Route 53
  Owning lavocado.click allows subdoimains such as ford.lavocado.click
 
- New Website: https://lavocado.click or http://lavocado.click or http://ford.lavocado.click
+ New Website: https://lavocado.click or http://lavocado.click or http://startup.lavocado.click
  

@@ -24,4 +24,9 @@ ssh -i rental$ ssh -i/Users/rental/Documents/'CS 260'/startup/keys/production.pe
  Owning lavocado.click allows subdoimains such as ford.lavocado.click
 
  New Website: https://lavocado.click or http://lavocado.click or http://startup.lavocado.click
+
+ **BOLD**
+ _Italicized_
+
+ 
  

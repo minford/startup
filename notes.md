@@ -29,5 +29,60 @@ ssh -i rental$ ssh -i/Users/rental/Documents/'CS 260'/startup/keys/production.pe
  **BOLD**
  _Italicized_
 
+ 01.26.2024
+ Example Code Pen
+ <body>
+  <p>Body</p>
+  <header>
+    <p>Minami - <span>Minami Ford</span></p>
+    <nav>Navigation
+      <div><a href ="https://www.byu.edu/">BYU</a></div>
+      <div><a href ="https://www.familysearch.org/en/united-states/">FamilySearch</a></div>
+        </nav>
+  </header>
+
+  <main>
+    <section>
+      <p>Section</p>
+      <ul>
+        <li>apples</li>
+        <li>bananas</li>
+        <li>oranges</li>
+      </ul>
+    </section>
+    <section>
+      <p>Section</p>
+      <table>
+        <tr>
+          <th>Table</th>
+          <th>Table</th>
+          <th>Table</th>
+        </tr>
+        <tr>
+          <td>table</td>
+          <td>table</td>
+          <td>table</td>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>CSS</td>
+          <td>JavaScript</td>
+        </tr>
+      </table>
+    </section>
+    <aside>
+      <p><img src = "https://img.freepik.com/free-photo/view-majestic-jellyfish-ocean_23-2150720122.jpg" width="100"></p>
+    </aside>
+  </main>
+
+  <footer>
+    <div>Footer - <span><a href = "https://github.com/minford/startup">My GitHub repo</a></span></div>
+  </footer>
+</body>
+
+<a href =" for a link
+
+<img src =" for an image
+
  
  

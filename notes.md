@@ -100,7 +100,7 @@ Top of all html files
 </head>
 
 
-
+./deployFiles.sh -k /Users/rental/Documents/'CS 260'/startup/keys/production.pem -h lavocado.click -s startup
 
  
  

@@ -83,6 +83,24 @@ ssh -i rental$ ssh -i/Users/rental/Documents/'CS 260'/startup/keys/production.pe
 <a href =" for a link
 
 <img src =" for an image
+<p> is a new paragraph
+<div is a child
+<h1 is a section heading
+
+Top of all html files
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Tell browsers not to scale the viewport automatically -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lavocado</title>
+  <link rel="icon" href="Logo.jpg" />
+</head>
+
+
+
 
  
  

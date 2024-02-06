@@ -35,9 +35,9 @@ The required technologies will be used in the following ways:
 
 
 ## HTML Deliverable
-HTML pages - Three HTML pages represent logging in, finding recipes, choosing 1 recipe.
-Links - The login page links to the page with all the recipes. It also links to github. The recipes page can link to a single recipe or logout back to the login page.
-Text - Each recipe includes the name, image, ingredients, directions, and a rating.
-Images - There is an image for each recipe, as well as the logo.
-DB/Login - Input boxes for username and password and Login button to submit. 
-WebSocket - The ranking of each recipe will be updated in real-time based on all users.
+- HTML pages - Three HTML pages represent logging in, finding recipes, choosing 1 recipe.
+- Links - The login page links to the page with all the recipes. It also links to github. The recipes page can link to a single recipe or logout back to the login page.
+- Text - Each recipe includes the name, image, ingredients, directions, and a rating.
+- Images - There is an image for each recipe, as well as the logo.
+- DB/Login - Input boxes for username and password and Login button to submit. 
+- WebSocket - The ranking of each recipe will be updated in real-time based on all users.

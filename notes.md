@@ -56,6 +56,7 @@ dig - Show the DNS information for a domain
 man - Look up a command in the manual
 
 Enter insert mode with i in vim
+Write file(save) :w
 Exit by pressing esc and type :q
 
 

@@ -26,6 +26,8 @@ ssh -i rental$ ssh -i/Users/rental/Documents/'CS 260'/startup/keys/production.pe
 
  New Website: https://lavocado.click or http://lavocado.click or http://startup.lavocado.click
 
+02.08.2024
+common linux commands
  echo - Output the parameters of the command
 cd - Change directory
 mkdir - Make directory
@@ -52,6 +54,9 @@ ping - Check if a website is up
 tracert - Trace the connections to a website
 dig - Show the DNS information for a domain
 man - Look up a command in the manual
+
+Enter insert mode with i in vim
+Exit by pressing esc and type :q
 
 
  **BOLD**

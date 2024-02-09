@@ -63,6 +63,7 @@ Exit by pressing esc and type :q
  **BOLD**
  _Italicized_
 
+##HTML
  01.26.2024
  Example Code Pen
  <body>
@@ -74,6 +75,8 @@ Exit by pressing esc and type :q
       <div><a href ="https://www.familysearch.org/en/united-states/">FamilySearch</a></div>
         </nav>
   </header>
+
+  Always include <!DOCTYPE html> at the top of HTML files
 
   <main>
     <section>
@@ -132,6 +135,53 @@ Top of all html files
   <title>Lavocado</title>
   <link rel="icon" href="Logo.jpg" />
 </head>
+
+HTML Comments <!-- commented text -->
+
+###HTML - common elements and characters
+Special Characters:
+Character	Entity
+&	&amp;
+<	&lt;
+>	&gt;
+"	&quot;
+'	&apos;
+😀	&#128512;
+
+Common Elements
+html	The page container
+head	Header information
+title	Title of the page
+meta	Metadata for the page such as character set or viewport settings
+script	JavaScript reference. Either a external reference, or inline
+include	External content reference
+body	The entire content body of the page
+header	Header of the main content
+footer	Footer of the main content
+nav	Navigational inputs
+main	Main content of the page
+section	A section of the main content
+aside	Aside content from the main content
+div	A block division of content
+span	An inline span of content
+h<1-9>	Text heading. From h1, the highest level, down to h9, the lowest level
+p	A paragraph of text
+b	Bring attention
+table	Table
+tr	Table row
+th	Table header
+td	Table data
+ol,ul	Ordered or unordered list
+li	List item
+a	Anchor the text to a hyperlink
+img	Graphical image reference
+dialog	Interactive component such as a confirmation
+form	A collection of user input
+input	User input field
+audio	Audio content
+video	Video content
+svg	Scalable vector graphic content
+iframe	Inline frame of another HTML page
 
 
 ./deployFiles.sh -k /Users/rental/Documents/'CS 260'/startup/keys/production.pem -h lavocado.click -s startup

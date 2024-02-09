@@ -26,7 +26,7 @@ ssh -i rental$ ssh -i/Users/rental/Documents/'CS 260'/startup/keys/production.pe
 
  New Website: https://lavocado.click or http://lavocado.click or http://startup.lavocado.click
 
-02.08.2024
+# 02.08.2024
 common linux commands
  echo - Output the parameters of the command
 cd - Change directory
@@ -63,7 +63,7 @@ Exit by pressing esc and type :q
  **BOLD**
  _Italicized_
 
-##HTML
+# HTML
  01.26.2024
  Example Code Pen
  <body>
@@ -138,7 +138,7 @@ Top of all html files
 
 HTML Comments <!-- commented text -->
 
-###HTML - common elements and characters
+# HTML - common elements and characters
 Special Characters:
 Character	Entity
 &	&amp;

@@ -41,3 +41,11 @@ The required technologies will be used in the following ways:
 - Images - There is an image for each recipe, as well as the logo.
 - DB/Login - Input boxes for username and password and Login button to submit. 
 - WebSocket - The ranking of each recipe will be updated in real-time based on all users.
+
+## CSS Deliverable
+- Header, footer, and main content body - kept consistent formatting for each page
+- Navigation elements - Put at the top left corner for each page, underlined to show link
+- Responsive to window resizing - Colors fill spaces no matter the size to accommodate all window sizes
+- Application elements - Added colors and centered a lot of elements
+- Application text content - Used the same font (Arial) also tried to keep sizing consistent for each text element
+- Application images - Image placeholders are in the right spots, the logo image is smaller and fits in header

@@ -183,17 +183,16 @@ video	Video content
 svg	Scalable vector graphic content
 iframe	Inline frame of another HTML page
 
+./deployFiles.sh -k /Users/rental/Documents/'CS 260'/startup/keys/production.pem -h lavocado.click -s startup
+
 Midterm Notes
 - CSS box model order from outside going in: margin, border, padding, content
-- HTML tag for unordered list is <ul>
+- HTML tag for unordered list is "<ul>"
 Javascript function examples:
-const f = (x) => {}
+"const f = (x) => {}
 function f(x){}
 const f = function(x){}
-  Wrong : function f(x)  = {}
-
-
-./deployFiles.sh -k /Users/rental/Documents/'CS 260'/startup/keys/production.pem -h lavocado.click -s startup
+Wrong : function f(x)  = {}"
 
  
  

@@ -185,14 +185,25 @@ iframe	Inline frame of another HTML page
 
 ./deployFiles.sh -k /Users/rental/Documents/'CS 260'/startup/keys/production.pem -h lavocado.click -s startup
 
-Midterm Notes
+# Midterm Notes
 - CSS box model order from outside going in: margin, border, padding, content
-- HTML tag for unordered list is "<ul>"
+- HTML tag for unordered list is "ul"
 Javascript function examples:
 "const f = (x) => {}
 function f(x){}
 const f = function(x){}
 Wrong : function f(x)  = {}"
+
+Valid:
+<script>1+1</script>
+<script src='main.js' />
+ <div onclick='1+1' />
+ Not Valid:
+ <javascript>1+1</javascript>
+
+ Javascript object: {n:1}
+
+ 
 
  
  

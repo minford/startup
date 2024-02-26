@@ -203,6 +203,15 @@ Valid:
 
  Javascript object: {n:1}
 
+ DOM textContent property - sets the child text for an element
+ hyperlink is a href = 'https link'
+
+ chmod +x deploy.sh make executable script
+
+ cs260.cs.byu.edu is a valid DNS subdomain
+
+ DNS record type CNAME should be used to point to another DNS record
+
  
 
  

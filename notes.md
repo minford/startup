@@ -212,6 +212,8 @@ Valid:
 
  DNS record type CNAME should be used to point to another DNS record
 
+ (condition) ? exp1 : exp2 - if statement 
+
  
 
  

@@ -195,11 +195,11 @@ const f = function(x){}
 Wrong : function f(x)  = {}"
 
 Valid:
-<script>1+1</script>
-<script src='main.js' />
- <div onclick='1+1' />
+"<script>1+1</script>"
+"<script src='main.js' />"
+ "<div onclick='1+1' />"
  Not Valid:
- <javascript>1+1</javascript>
+ "<javascript>1+1</javascript>"
 
  Javascript object: {n:1}
 
@@ -213,6 +213,8 @@ Valid:
  DNS record type CNAME should be used to point to another DNS record
 
  (condition) ? exp1 : exp2 - if statement 
+
+ console.log() = printf
 
  
 

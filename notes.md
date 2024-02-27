@@ -216,7 +216,18 @@ Valid:
 
  console.log() = printf
 
- 
+ () => 3;
+// RETURNS: 3
+
+() => {
+  3;
+};
+// RETURNS: undefined
+
+() => {
+  return 3;
+};
+// RETURNS: 3
 
  
  

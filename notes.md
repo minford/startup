@@ -183,8 +183,61 @@ video	Video content
 svg	Scalable vector graphic content
 iframe	Inline frame of another HTML page
 
-
 ./deployFiles.sh -k /Users/rental/Documents/'CS 260'/startup/keys/production.pem -h lavocado.click -s startup
+
+# Midterm Notes
+- CSS box model order from outside going in: margin, border, padding, content
+- HTML tag for unordered list is "ul"
+Javascript function examples:
+"const f = (x) => {}
+function f(x){}
+const f = function(x){}
+Wrong : function f(x)  = {}"
+
+Valid:
+"<script>1+1</script>"
+"<script src='main.js' />"
+ "<div onclick='1+1' />"
+ Not Valid:
+ "<javascript>1+1</javascript>"
+
+ Javascript object: {n:1}
+
+ DOM textContent property - sets the child text for an element
+ hyperlink is a href = 'https link'
+
+ chmod +x deploy.sh make executable script
+
+ cs260.cs.byu.edu is a valid DNS subdomain
+
+ DNS record type CNAME should be used to point to another DNS record
+
+ (condition) ? exp1 : exp2 - if statement 
+
+ console.log() = printf
+
+ () => 3;
+// RETURNS: 3
+
+() => {
+  3;
+};
+// RETURNS: undefined
+
+() => {
+  return 3;
+};
+// RETURNS: 3
+
+ localStorage.
+
+Function	Meaning
+setItem(name, value)	Sets a named item's value into local storage
+getItem(name)	Gets a named item's value from local storage
+removeItem(name)	Removes a named item from local storage
+clear()	Clears all items in local storage
+
+valid json = {"x":3}
 
  
  

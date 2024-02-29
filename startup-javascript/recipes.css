@@ -1,6 +1,7 @@
 body {
   font-family: Arial;
   flex-direction: column;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -37,6 +38,7 @@ nav menu li a {
 }
 
 main {
+  flex: 1;
   padding: 20px;
   background: #f2f2f2;
 }
@@ -72,11 +74,52 @@ main {
   height: auto;
 }
 
+#recipeForm {
+  display: none;
+  padding: 20px;
+  background: #f2f2f2;
+  margin-top: 20px;
+}
+
+#recipeForm label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#recipeForm input[type="text"],
+#recipeForm input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#recipeForm button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#showFormBtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
 footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 20px;
+ 
+  bottom: 0;
+  width: 100%
+  
 }
 
 footer a {

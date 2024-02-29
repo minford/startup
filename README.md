@@ -49,3 +49,10 @@ The required technologies will be used in the following ways:
 - Application elements - Added colors and centered a lot of elements
 - Application text content - Used the same font (Arial) also tried to keep sizing consistent for each text element
 - Application images - Image placeholders are in the right spots, the logo image is smaller and fits in header
+
+## Javascript Deliverable
+For this deliverable, I implemented some javascript elements so users could add recipes to the recipes page and created placeholders for future technologies
+ - Login - When a user presses login, they are "signed in" and redirected to the recipes page
+ - Database - Each recipe a user inputs is stored in a database. There are still adjustments needed to be made, especially with the ingredients list and accessing each recipe.
+ - WebSocket - as each user inputs recipes, they will show up for everyone so users can share recipes with each other
+ - Application Logic - Users can login, add recipes, view recipes - the ranking still needs to be worked on

@@ -59,9 +59,8 @@ document.getElementById("recipeForm").addEventListener("submit", function (event
 });
 
 // Function to toggle form visibility
-document.getElementById("showFormBtn").addEventListener("click", function () {
-  var form = document.getElementById("recipeForm");
-  form.style.display = (form.style.display === "none") ? "block" : "none";
+document.getElementById("showFormBtn").addEventListener("click", function() {
+  document.getElementById("recipeForm").style.display = "block";
 });
 
 function displayRecipes() {

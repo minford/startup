@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Tell browsers not to scale the viewport automatically -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lavocado</title>
+  <link rel="icon" href="Logo.jpg" />
+  <script src="recipes.js" defer></script>
+  <link rel="stylesheet" href="recipes.css">
+</head>
+
+<body>
+  <!-- Use header, main, and footer elements to give semantic structure -->
+  <header>
+    <h1>Lavocado<sup>&reg;</sup>
+      <div id="picture" class="picture-box"><img width="50px" src="Logo.jpg" /></div>
+    </h1>
+    <!-- Navigation elements -->
+    <nav>
+      <!-- Menu is a semantic alternative to <ul> that represents an interaction -->
+      <menu>
+        <li><a href="index.html">Logout</a></li>
+      </menu>
+    </nav>
+
+    <!-- Since we don't have the ability to style we use old style HTML to give some visual formatting -->
+  </header>
+
+  <main>
+
+    <body>
+      <button id="showFormBtn">Add Recipe</button>
+
+      <!-- Initially hidden form -->
+      <form id="recipeForm" style="display: none;">
+        <label for="recipeName">Recipe Name:</label>
+        <input type="text" id="recipeName" required><br>
+
+        <label for="recipeImage">Image URL:</label>
+        <input type="text" id="recipeImage" required><br>
+
+        <div id="ingredientsList">
+          <label for="ingredient">Ingredients:</label>
+          <input type="text" id="ingredient" class="ingredient-input" required><br>
+        </div>
+        <button type="button" id="addIngredientBtn">Add Ingredient</button><br>
+
+
+        <label for="recipeDirections">Directions:</label>
+        <textarea id="recipeDirections" rows="4" required></textarea><br>
+
+        <label for="recipeRating">Rating:</label>
+        <input type="number" id="recipeRating" min="0" max="5" step="0.1" required><br>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div class="container" id="recipeContainer">
+        <!--
+        <div>
+          <h2><a href="singleRecipe1.html">Sweet Avocado</a></h2>
+          <img src="Logo.jpg">
+          <p>Rating: 4.5 stars</p>
+        </div>
+        <div>
+          <h2><a href="singleRecipe2.html">Recipe 2</a></h2>
+          <img src="Logo.jpg">
+          <p>Rating: 4.0 stars</p>
+        </div>
+        <div>
+          <h2><a href="singleRecipe3.html">Recipe 3</a></h2>
+          <img src="Logo.jpg">
+          <p>Rating: 3.0 stars</p>
+        </div>
+        <div>
+          <h2><a href="singleRecipe4.html">Recipe 4</a></h2>
+          <img src="Logo.jpg">
+          <p>Rating: 5.0 stars</p>
+        </div> -->
+      </div>
+    </body>
+
+  </main>
+
+  <footer>
+    <span class="text-reset">Minami Ford</span>
+    <br />
+    <a href="https://github.com/minford/startup/tree/main/startup-html">GitHub</a>
+  </footer>
+</body>
+
+</html>

@@ -19,7 +19,7 @@ header h1{
   margin: 0;
   font-size: 24px;
 }
-#picture {
+#logo {
   margin-right: 10px;
 }
 #picture img{
@@ -49,6 +49,25 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.quote-box {
+  margin-top: 1em;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.author {
+  font-weight: bold;
+  text-align: right;
+}
+
+.author::before {
+  content: " - ";
 }
 
 footer{

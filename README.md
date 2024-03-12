@@ -56,3 +56,12 @@ For this deliverable, I implemented some javascript elements so users could add 
  - Database - Each recipe a user inputs is stored in a database. There are still adjustments needed to be made, especially with the ingredients list and accessing each recipe.
  - WebSocket - as each user inputs recipes, they will show up for everyone so users can share recipes with each other
  - Application Logic - Users can login, add recipes, view recipes - the ranking still needs to be worked on
+
+## Service deliverable
+For this deliverable I added backend endpoints that keep track of all the recipes users input and display them.
+
+Node.js/Express HTTP service - updated and added .js files to do this
+Static middleware for frontend - updated .js files to do this
+Calls to third party endpoints - I display quotes on the login page
+Backend service endpoints - Placeholders to keep track of a users login info to keep track of the user. Endpoints for rating and displaying recipes.
+Frontend calls service endpoints - I duse the fetch function to keep the service updated.

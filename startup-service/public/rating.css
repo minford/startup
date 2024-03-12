@@ -1,0 +1,127 @@
+body {
+  font-family: Arial;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4CAF50;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+#picture {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+nav menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+nav menu li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav menu li a {
+  color: #333;
+}
+
+main {
+  padding: 20px;
+  background: #f2f2f2;
+  min-height: 60vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.container div {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  background: white;
+
+}
+
+.container h2 {
+  margin-top: 0;
+}
+.container h2 a{
+  color: black;
+}
+
+.container p {
+  margin-bottom: 0;
+}
+
+.container img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+#ratingForm {
+  display: none;
+  padding: 20px;
+  background: #f2f2f2;
+  margin-top: 20px;
+}
+
+#ratingForm label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#ratingForm input[type="text"],
+#ratingForm input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#ratingForm button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#showFormBtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
+  width: 100%
+  
+}
+
+footer a {
+  color: white;
+}
+

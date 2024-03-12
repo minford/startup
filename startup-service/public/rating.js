@@ -1,35 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+ 
+ // Recipe form data
+document.getElementById("ratingForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent form submission
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Lavocado HTML</title>
-  <link rel="icon" href="Logo.jpg" />
-  <script src="login.js"></script>
-  <link rel="stylesheet" href="main.css" />
-</head>
+  // Get the rating value from the form
+  const recipeRating = parseFloat(document.getElementById("recipeRating").value);
 
-<body>
-  <!-- Use header, main, and footer elements to give semantic structure -->
-  <header>
-    <h1>Lavocado<sup>&reg;</sup></h1>
-    <div id="picture" class="picture-box">
-      <img src="Logo.jpg" alt="random"/>
-    </div>
-  </header>
+  // Push the rating into the ratings array of the selected recipe
+  const selectedRecipeIndex = 0; // Replace 0 with the index of the selected recipe
+  recipes[selectedRecipeIndex].ratings.push(recipeRating);
 
-  <main>
-    <div>
-      
-    </div>
-  </main>
+  // Clear the form fields after submit
+  document.getElementById("recipeRating").value = "";
 
-  <footer>
-    <span>Minami Ford</span>
-    <br />
-    <a href="https://github.com/minford/startup/tree/main/startup-html">GitHub</a>
-  </footer>
+  // Call the rate function to update the displayed recipes
+  rate();
+});
 
-</body>
 
-</html>
+function rate() {
+  var recipeContainer = document.getElementById("recipeContainer");
+
+  // Clear existing content
+  recipeContainer.innerHTML = "";
+
+  recipes.forEach(function (recipe) {
+      var totalRating = recipe.ratings.reduce((acc, curr) => acc + curr, 0);
+      var averageRating = totalRating / recipe.ratings.length || 0;
+
+      var recipeDiv = document.createElement("div");
+      recipeDiv.innerHTML = `
+          <h2><a href="singleRecipe1.html">${recipe.name}</a></h2>
+          <img src="${recipe.image}" alt="${recipe.name}">
+          <p>Average Rating: ${averageRating.toFixed(1)} stars</p>
+      `;
+      recipeContainer.appendChild(recipeDiv);
+  });
+}
+
+
+rate();

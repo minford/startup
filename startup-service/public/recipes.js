@@ -1,4 +1,30 @@
+const express = require('express');
+const app = express();
+
+app.use(express.json());
+
 let recipes = [];
+
+app.post('/recipes', (req, res) => {
+  const newRecipe = req.body;
+  recipes.push(newRecipe);
+  res.status(201).send('Recipe added successfully!');
+});
+
+// Route to retrieve all recipes
+app.get('/recipes', (req, res) => {
+    res.json(recipes);
+});
+
+// Serve your HTML file
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html');
+});
+
+// Start the server
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
 
 //store ingredients
 document.getElementById("addIngredientBtn").addEventListener("click", function () {
@@ -27,7 +53,6 @@ document.getElementById("recipeForm").addEventListener("submit", function (event
 
   var name = document.getElementById("recipeName").value;
   var image = document.getElementById("recipeImage").value;
-  var rating = parseFloat(document.getElementById("recipeRating").value);
 
   var ingredients = [];
   var ingredientInputs = document.querySelectorAll(".ingredient-input");
@@ -40,7 +65,6 @@ document.getElementById("recipeForm").addEventListener("submit", function (event
   recipes.push({
     name: name,
     image: image,
-    rating: rating
   });
 
   //update the recipes
@@ -53,8 +77,6 @@ document.getElementById("recipeForm").addEventListener("submit", function (event
     input.value = "";
   });
   document.getElementById("recipeDirections").value = "";
-  document.getElementById("recipeRating").value = "";
-
   document.getElementById("recipeForm").style.display = "none";
 });
 

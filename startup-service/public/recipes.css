@@ -37,6 +37,12 @@ nav menu li a {
   color: #333;
 }
 
+#savedRecipesBtn {
+  position: absolute;
+  top: 10px; 
+  right: 10px;
+}
+
 main {
   padding: 20px;
   background: #f2f2f2;

@@ -1,3 +1,26 @@
+// Get recipe name from URL parameters
+const urlParams = new URLSearchParams(window.location.search);
+const recipeName = urlParams.get('recipeName');
+
+// Fetch the recipe details from recipes.js based on the recipe name
+fetch('/api/recipes') // Assuming your API endpoint to fetch recipes is '/api/recipes'
+    .then(response => response.json())
+    .then(recipes => {
+        const recipe = recipes.find(recipe => recipe.name === recipeName);
+        if (recipe) {
+            // Fill in the recipe details in the HTML
+            document.getElementById('recipeTitle').textContent = recipe.name;
+            document.getElementById('recipeImage').setAttribute('src', recipe.image);
+            document.getElementById('recipeDirections').textContent = recipe.directions;
+            document.getElementById('recipeIngredients').innerHTML = recipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('');
+            document.getElementById('recipeRating').textContent = recipe.rating;
+
+        } else {
+            console.error('Recipe not found:', recipeName);
+        }
+    })
+    .catch(error => console.error('Error fetching recipe:', error));
+
 function rate() {
     window.location.href = "rating.html";
   }

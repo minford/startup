@@ -33,9 +33,10 @@ document.getElementById("recipeForm").addEventListener("submit", function (event
       ingredients.push(input.value.trim());
     });
     
-  
+  //store directions
     var directions = document.getElementById("recipeDirections").value.trim();
   
+  //data to show on recipes page
   var recipeData = {
     name: name,
     image: image
@@ -52,7 +53,6 @@ document.getElementById("recipeForm").addEventListener("submit", function (event
     .then(response => response.json())
     .then(recipes => {
       displayRecipes();
-      // clear fields after submit
       document.getElementById("recipeName").value = "";
       document.getElementById("recipeImage").value = "";
       document.querySelectorAll(".ingredient-input").forEach(input => input.value = "");
@@ -67,12 +67,13 @@ document.getElementById("showFormBtn").addEventListener("click", function () {
   document.getElementById("recipeForm").style.display = "block";
 });
 
+//show all recipes from all users
 function displayRecipes() {
   fetch('/api/recipes')
     .then(response => response.json())
     .then(recipes => {
       var recipeContainer = document.getElementById("recipeContainer");
-      recipeContainer.innerHTML = ""; // Clear existing content
+      recipeContainer.innerHTML = ""; 
 
       recipes.forEach(function (recipe) {
         var recipeDiv = document.createElement("div");
@@ -88,12 +89,13 @@ function displayRecipes() {
 
 }
 
+//show the user's saved recipes
 function displaySavedRecipes() {
-  fetch('/api/saved-recipes') // Assuming this endpoint returns saved recipes for the current user
+  fetch('/api/saved-recipes')
     .then(response => response.json())
     .then(savedRecipes => {
-      var recipeContainer = document.getElementById("recipeContainer");
-      recipeContainer.innerHTML = ""; // Clear existing content
+      var savedRecipeContainer = document.getElementById("savedRecipeContainer");
+      savedRecipeContainer.innerHTML = ""; 
 
       savedRecipes.forEach(function (recipe) {
         var recipeDiv = document.createElement("div");

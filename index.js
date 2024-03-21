@@ -23,7 +23,9 @@ app.use((_req, res) => {
     console.log(`Listening on port ${port}`);
   });
   
+  //keep track of recipe lists
   let recipes = [];
+  let savedRecipes = [];
 
   apiRouter.post('/recipes', (req, res) => {
     const newRecipe = req.body;
@@ -33,6 +35,16 @@ app.use((_req, res) => {
   
   apiRouter.get('/recipes', (_req, res) => {
     res.send(recipes);
+  });
+
+  apiRouter.post('/saved-recipes', (req, res) => {
+    const newRecipe = req.body;
+    savedRecipes.push(newRecipe);
+    res.send(savedRecipes);
+  });
+  
+  apiRouter.get('/saved-recipes', (_req, res) => {
+    res.send(savedRecipes);
   });
   
   apiRouter.post('/rate', (req, res) => {

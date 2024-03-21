@@ -18,15 +18,13 @@ document.getElementById("ratingForm").addEventListener("submit", function (event
   .then(response => response.json())
   .then(data => {
     console.log('Rating submitted successfully:', data);
-    // Optionally, update UI to reflect the new rating
   })
   .catch(error => console.error('Error submitting rating:', error));
 
-  // Clear the form fields after submit
   document.getElementById("recipeRating").value = "";
 });
 
-
+//show recipe data on ratings page
 function loadRecipeDetails(recipeName) {
   fetch(`/api/recipes/${recipeName}`)
   .then(response => response.json())
@@ -43,14 +41,14 @@ window.onload = function() {
   loadRecipeDetails(recipeName);
 };
 
+//allow user to rate
 function rate(recipeName) {
   var recipeContainer = document.getElementById("recipeContainer");
-  fetch('/api/recipes') // Assuming your API endpoint to fetch recipes is '/api/recipes'
+  fetch('/api/recipes') 
     .then(response => response.json())
     .then(recipes => {
       const recipe = recipes.find(recipe => recipe.name === recipeName);
       if (recipe) {
-        // Fill in the recipe details in the HTML
         document.getElementById('recipeTitle').textContent = recipe.name;
         document.getElementById('recipeImage').setAttribute('src', recipe.image);
 
@@ -64,9 +62,9 @@ function rate(recipeName) {
     })
     .catch(error => console.error('Error fetching recipe:', error));
 
-  // Clear existing content
   recipeContainer.innerHTML = "";
 
+  //get average ratings for each recipe
   recipes.forEach(function (recipe) {
     var totalRating = recipe.ratings.reduce((acc, curr) => acc + curr, 0);
     var averageRating = totalRating / recipe.ratings.length || 0;

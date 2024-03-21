@@ -2,8 +2,8 @@
 const urlParams = new URLSearchParams(window.location.search);
 const recipeName = urlParams.get('recipeName');
 
-// Fetch the recipe details from recipes.js based on the recipe name
-fetch('/api/recipes') // Assuming your API endpoint to fetch recipes is '/api/recipes'
+// get the recipe data of the one the user clicked on
+fetch('/api/recipes') 
     .then(response => response.json())
     .then(recipes => {
         const recipe = recipes.find(recipe => recipe.name === recipeName);
@@ -21,32 +21,31 @@ fetch('/api/recipes') // Assuming your API endpoint to fetch recipes is '/api/re
     })
     .catch(error => console.error('Error fetching recipe:', error));
 
+//allow the user to rate 
 function rate() {
     window.location.href = "rating.html";
   }
+
+  //show that the recipe was saved
 function save(){
   alert("Recipe saved!");
 
-    // Send a fetch request to save the recipe
-    fetch('save_recipe_endpoint', {
-        method: 'POST', // You might want to use POST method to send the recipe data
+    fetch('/api/saved-recipes', {
+        method: 'POST', 
         headers: {
-            'Content-Type': 'application/json', // Specify the content type of the request body
+            'Content-Type': 'application/json', 
         },
-        body: JSON.stringify({
-            recipeName: 'Sweet Avocado', // Example recipe name
-            // Add more data as needed
-        }),
+        body: JSON.stringify(recipeData),
     })
     .then(response => {
         if (!response.ok) {
             throw new Error('Failed to save recipe.');
         }
-        return response.json(); // Assuming the server responds with JSON data
+        return response.json(); 
     })
     .then(data => {
         console.log('Recipe saved successfully:', data);
-        // You can perform additional actions here if needed
+        
     })
     .catch(error => {
         console.error('Error saving recipe:', error.message);

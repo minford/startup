@@ -1,0 +1,24 @@
+{
+  "name": "startup-service",
+  "version": "1.0.0",
+  "description": "Startup with service endpoints",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minford/startup/tree/main/startup-service"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/minford/startup/tree/main#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.1",
+    "mongodb": "^6.5.0",
+    "uuid": "^9.0.1"
+  }
+}

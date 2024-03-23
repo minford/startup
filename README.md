@@ -66,12 +66,12 @@ For this deliverable I added backend endpoints that keep track of all the recipe
 - Backend service endpoints - Placeholders to keep track of a users login info to keep track of the user. Endpoints for rating and displaying recipes.
 - Frontend calls service endpoints - I use the fetch function to keep the service updated.
 
-##DB/Login deliverable
+## DB/Login deliverable
 For this deliverable I tried to connect the recipes that a user inputs with the logged in user.
 
-MongoDB Atlas database created - done!
-Stores data in MongoDB - done!
-User registration - Creates a new account in the database.
-Existing user - Stores the user's recipes (for some reason the recipes are getting lost)
-Use MongoDB to store credentials - Stores both user and their recipes. (also still working on this)
-Restricts functionality - You can only rate recipes after signing in. 😔
+- MongoDB Atlas database created - done!
+- User registration - Creates a new account in the database.
+- Existing user - Stores the user's recipes (for some reason the recipes are getting lost)
+- Use MongoDB to store credentials - Stores both user and their recipes. (also still working on this)
+- Stores data in MongoDB - done!
+- Restricts functionality - You can only rate recipes after signing in. 😔

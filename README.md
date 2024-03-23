@@ -64,4 +64,4 @@ For this deliverable I added backend endpoints that keep track of all the recipe
 - Static middleware for frontend - updated .js files to do this
 - Calls to third party endpoints - I display quotes on the login page
 - Backend service endpoints - Placeholders to keep track of a users login info to keep track of the user. Endpoints for rating and displaying recipes.
-- Frontend calls service endpoints - I duse the fetch function to keep the service updated.
+- Frontend calls service endpoints - I use the fetch function to keep the service updated.

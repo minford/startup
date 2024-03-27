@@ -49,19 +49,22 @@ app.use((_req, res) => {
   });
   
   apiRouter.post('/rate', (req, res) => {
-    const { recipeName, rating } = req.body;
-    const recipeIndex = recipes.findIndex(recipe => recipe.name === recipeName);
-  
+    const recipeIndex = recipes.findIndex(recipe => recipe.name === req.body.recipeName);
+    //console.log(req.body.rating);
     if (recipeIndex !== -1) {
       // Add the rating to the recipe's ratings array
-      recipes[recipeIndex].ratings.push(rating);
+      recipes[recipeIndex].ratings.push(req.body.rating);
+      //console.log(recipes[recipeIndex].ratings);
   
       // Calculate the average rating for the recipe
       const totalRating = recipes[recipeIndex].ratings.reduce((acc, curr) => acc + curr, 0);
+      console.log(totalRating);
       const averageRating = totalRating / recipes[recipeIndex].ratings.length;
+      console.log(averageRating);
   
       res.json({ success: true, averageRating });
     } else {
       res.status(404).json({ success: false, message: 'Recipe not found' });
     }
   });
+  //TODO: Make sure averageRating is getting the right number and update recipe.rating to be the average rating so that it shows on the recipes page and single recipes page correctly

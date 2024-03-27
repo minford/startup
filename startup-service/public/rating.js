@@ -8,6 +8,7 @@ function calculateRating(ratings) {
 }
 
 // get the recipe data of the one the user clicked on
+//display title and image
 fetch('/api/recipes')
   .then(response => response.json())
   .then(recipes => {
@@ -16,11 +17,11 @@ fetch('/api/recipes')
       // Fill in the recipe details in the HTML
       document.getElementById('recipeTitle').textContent = recipe.name;
       document.getElementById('recipeImage').setAttribute('src', recipe.image);
-      const avgRating = calculateRating(recipe.ratings);
+      //const avgRating = calculateRating(recipe.ratings);
       // document.getElementById('recipeRating').textContent = `Average Rating: ${averageRating.toFixed(1)} stars`;
 
 
-      document.getElementById('recipeRating').textContent = recipe.rating;
+      //document.getElementById('recipeRating').textContent = recipe.rating;
 
     } else {
       console.error('Recipe not found:', recipeName);
@@ -30,38 +31,48 @@ fetch('/api/recipes')
 
 
 // Recipe form data
-document.getElementById("ratingForm").addEventListener("submit", function (event) {
-  event.preventDefault(); // Prevent form submission
+function addRating(event){
+  // document.getElementById("ratingForm").addEventListener("submit", function (event) {
+  //   event.preventDefault(); // Prevent form submission
+  
+    fetch('/api/recipes')
+      .then(response => response.json())
+      .then(recipes => {
+        const recipe = recipes.find(singleRecipe => singleRecipe.name === recipeName);
+        if (recipe) {
+         
+          // Get the rating value from the form
+          //const recipeRating = document.getElementByName("recipeRating").value;
+          const recipeRating = event.target.elements.recipeRating.value;
 
-  fetch('/api/recipes')
-    .then(response => response.json())
-    .then(recipes => {
-      const recipe = recipes.find(singleRecipe => singleRecipe.name === recipeName);
-      if (recipe) {
-        // Update the recipe data with the new rating
-        recipe.ratings.push(recipeRating);
+          //console.log(recipeRating);
 
-        // Get the rating value from the form
-        const recipeRating = parseFloat(document.getElementById("recipeRating").value);
-        fetch('/api/recipes/rate', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(recipe)
-        })
-          .then(response => response.json())
-          .then(data => {
-            console.log('Rating submitted successfully:', data);
+          let recipeData = {
+            recipeName: recipe.name, // Send the recipe name
+            rating: recipeRating // Send the rating
+          }
+          //console.log(recipe.name);
+          //console.log(recipeRating);
+          fetch('/api/rate', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(recipeData)
           })
-          .catch(error => console.error('Error submitting rating:', error));
-      } else {
-        console.error('Recipe not found:', recipeName);
-      }
-    })
-    .catch(error => console.error('Error fetching recipe:', error));
+            .then(response => response.json())
+            .then(data => {
+              console.log('Rating submitted successfully:', data);
+            })
+            .catch(error => console.error('Error submitting rating:', error));
+        } else {
+          console.error('Recipe not found:', recipeName);
+        }
+      })
+      .catch(error => console.error('Error fetching recipe:', error));
+  
+   //document.getElementById("recipeRating").value = "";
+}
 
-  document.getElementById("recipeRating").value = "";
-});
 
 //work on fixing this page, rudece function not getting anything
